@@ -34,9 +34,9 @@
          - main (largest) appears first
          - mid (second-largest) appears next
          - small appears last */
-        --icon-delay-main: 0s;
-        --icon-delay-mid: 0.4s;
-        --icon-delay-small: 0.8s;
+        --icon-delay-main: 1s;
+        --icon-delay-mid: 1.4s;
+        --icon-delay-small: 1.8s;
       }
 
       /* 16x16 sparkle icon parts
@@ -45,6 +45,7 @@
       #sparkleIcon-main,
       #sparkleIcon-mid,
       #sparkleIcon-small {
+        opacity: 0;
         animation: sparklePulse var(--icon-duration) ease-in-out infinite;
       }
 

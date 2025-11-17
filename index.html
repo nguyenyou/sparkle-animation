@@ -25,12 +25,15 @@
        =============================== */
     :root {
       /* Duration and order for the 16x16 comparison icon parts */
-      --icon-duration: 3.5s;
+      --icon-duration: 2s; /* was 3.5s – faster overall cycle */
 
-      /* Adjust these to change sequence for sparkleIcon-main/mid/small */
+      /* Adjust these to change sequence for sparkleIcon-main/mid/small
+         - main (largest) appears first
+         - mid (second-largest) appears next
+         - small appears last */
       --icon-delay-main: 0s;
-      --icon-delay-mid: 0.8s;
-      --icon-delay-small: 1.6s;
+      --icon-delay-mid: 0.4s;
+      --icon-delay-small: 0.8s;
     }
 
     /* 16x16 sparkle icon parts
